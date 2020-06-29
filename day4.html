@@ -1,0 +1,145 @@
+<head>
+<style>
+#bg{
+  background: #e1efbb url('mountain.jpg');
+} 
+#title{
+  padding: 3%
+}
+.double {
+  outline-style: double;
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+iframe{
+  display: none;
+}
+img{
+ margin:0 auto; 
+}
+h1{
+  text-align: center;
+  color:coral;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.form{
+  margin-top: 3%;
+
+  float: right;
+
+}
+
+#submit:hover{
+  background-color:green;
+}
+#submit:active{
+  background-color:red;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 5%;
+  
+  overflow: hidden;
+}
+.j{
+  margin-bottom:10%;
+}
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+    margin-left: 2px;
+
+  display: block;
+  padding: 8px;
+  
+  background-color: #dddddd;
+}
+
+ tr:nth-child(even) {background-color: #f2f2f2;} 
+</style>
+</head>
+
+<h1 id=title>Yohaan Vakil</h1>
+<div class=j>
+<ul class=navbar>
+  <li><a href="#title">Home</a></li>
+  <li><a href="#myDiv">Interest</a></li>
+  <li><a href="#form">form</a></li>
+</ul>
+  </div>
+<div id=bg>
+  <p class=double>Hello how are you:) </p>
+  <img src="https://avatars1.githubusercontent.com/u/20089340?s=460&u=d2d5892651ff1b41c4ad6bd874cf7234a8ef2b5e&v=4" alt="my photo">
+</div>
+
+
+
+ <iframe src="https://github.com/yozaam/" title="my github"></iframe> 
+
+
+<div class="myDiv">
+  <h2>I am quite interested in working on new projects</h2>
+  <p>Open source is something i would like to do</p>
+  <h3>My skills</h3>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>C++</li>
+  </ul>
+</div>
+
+<p>MPSTME</p>
+ <a href="courses.html">courses completed</a> 
+
+
+<table class=double>
+    <colgroup>
+        <col>
+        <col>
+        <col>
+    </colgroup>
+    <tr>
+        <td>Embedded Systems</td>
+        <td>CGPA</td>
+        <td>GPA</td>
+    </tr>
+    <tr>
+        <td>96</td>
+        <td>3.6</td>
+        <td>3.9</td>
+    </tr>
+</table>
+
+
+<div class="form" id=form>
+  <form>
+  <label for="name">name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="num">num:</label><br>
+  <input type="number" id="num" name="num">
+  
+  <input type="radio" id="btech" name="btech" value="btech">
+  <label for="btech">btech</label><br>
+  <input type="radio" id="mtech" name="mtech" value="mtech">
+  <label for="mtech">mtech</label><br>
+  
+   <textarea name="description" rows="10" cols="30">
+   Description..
+   </textarea>
+   
+    <input type="checkbox" id="ml" name="ml" value="ml">
+    <label for="ml">ml</label><br>
+    <input type="checkbox" id="cv" name="cv" value="cv">
+    <label for="cv">cv</label><br>
+  
+    <input type="submit" value="Submit" id="submit" >
+</form> 
+</div>
