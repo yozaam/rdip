@@ -43,6 +43,66 @@
  <iframe src="https://github.com/yozaam/" title="my github"></iframe> 
 <img src="https://avatars1.githubusercontent.com/u/20089340?s=460&u=d2d5892651ff1b41c4ad6bd874cf7234a8ef2b5e&v=4" alt="my photo">
 <p>MPSTME</p>
+    
+    <p id="date">
+        <script>
+            
+            var today = new Date();
+
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            document.getElementById("date").innerHTML = date;
+
+            var looping = function(n) {
+                var a = 0, b = 1, f = 1;
+                for(var i = 2; i <= n; i++) {
+                    f = a + b;
+                    a = b;
+                    b = f;
+                }
+                return f;
+            };
+
+            function fibo(){
+                var n = document.getElementById("fibo").value;
+                switch(n){
+                    case "10":
+                        document.getElementById("out").innerHTML = "ten"
+                        break;
+                    case "100":
+                    document.getElementById("out").innerHTML = "hundred";
+                    break;
+                    default:
+                        document.getElementById("out").innerHTML = looping(n);
+                        break;
+                }
+            }
+
+        </script>
+    </p>
+
+    <input type="number" id="fibo" placeholder="enter a no" >
+    <button onclick="fibo()">Fibo It!</button>
+    <p id="out"></p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <p id="demo"></p>
+
+    <h5>How to fetch 5th , 7th , 10th word</h5>
+    <p id="abouthtml">HTML is the standard markup language for Web pages.
+
+    With HTML you can create your own Website.
+
+    This tutorial follows the latest HTML5 standard.
+
+    HTML is easy to learn - You will enjoy it!</p>
+    <h6 id="str"></h6>
+    <script>
+        var str = document.getElementById("abouthtml").innerHTML;
+        var arr = str.split(" ");
+
+        document.getElementById("str").innerHTML = arr[6]+" "+arr[7]+" "+arr[11];
+    </script>
+
  <a href="courses.html">courses completed</a> 
 
 
