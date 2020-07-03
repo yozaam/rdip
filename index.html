@@ -1,9 +1,19 @@
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <title>Yohaan</title>
 <style>
 .myDiv {
   border: 5px outset red;
   background-color: lightblue;
   text-align: center;
+}
+
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:grey;
+    border:solid 1px;
 }
 </style>
 <script>
@@ -61,7 +71,7 @@
                 }
                 return f;
             };
-
+ 
             function fibo(){
                 var n = document.getElementById("fibo").value;
                 switch(n){
@@ -131,10 +141,40 @@
     </tr>
 
 </table>
+
+
 <script>
+    $(document).ready(function(){
+  $(".oh").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+
 function avg(){
   document.write("avg: ",(96+94)/2)
 }
 
 avg();
+</script>
+
+
+<div class="row oh" style="margin-top:5%">
+    <div class="col post">
+        double click on me to post
+    </div>
+</div>
+
+<script>
+    
+$(".postman").click(function(){
+  $.post("api.asp",
+  {
+    name: "h",
+    city: "hh"
+  },
+  function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+}); 
+
 </script>
